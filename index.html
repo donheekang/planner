@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소개 이벤트 웹사이트</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 소개 섹션 -->
+    <section>
+        <h2>소개</h2>
+        <p>내가 바로 소개왕!</p>
+        <p>가족,친구,지인 모두 환영합니다.</p>
+    </section>
+
+    <!-- 공지사항 섹션 -->
+    <section>
+        <h2>공지사항</h2>
+        <p>자격요건</p>
+        <p>1.신용점수 500점이상</p>
+        <p>2.소득구간 연 6,000만 이하</p>
+        <p>(개인사업자의 경우 연매출 6,000만이하)</p>
+        <p>기본 소개비 인당 30만</p>
+        <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/148280996/277239920-5f4d0c23-d1d9-46e1-ba10-49d6d509a37e.jpg" alt="공지사항 이미지">
+    </section>
+
+    <!-- 정보 제출 폼 -->
+    <section>
+        <h2>소개 정보 제출</h2>
+        <!-- Netlify 폼 설정 -->
+        <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
+            <div>
+                <label for="introducerName">소개하는 사람 이름:</label>
+                <input type="text" id="introducerName" name="introducerName">
+            </div>
+            <div>
+                <label for="introducerContact">소개하는 사람 연락처:</label>
+                <input type="text" id="introducerContact" name="introducerContact">
+            </div>
+            <div>
+                <label for="introduceeName">소개받는 사람 이름:</label>
+                <input type="text" id="introduceeName" name="introduceeName">
+            </div>
+            <div>
+                <label for="introduceeContact">소개받는 사람 연락처:</label>
+                <input type="text" id="introduceeContact" name="introduceeContact">
+            </div>
+            <button type="submit">제출하기</button>
+        </form>
+    </section>
+
+    <!-- 문의 섹션 -->
+    <section>
+        <h2>문의사항</h2>
+        <p>이메일: Impnjob@gmail.com</p>
+        <p>고객센터: 010.8499.5718</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
