@@ -24,11 +24,43 @@
         <p>2.소득구간 연 6,000만 이하</p>
         <p>(개인사업자의 경우 연매출 6,000만이하)</p>
         <p>기본 소개비 인당 30만</p>
-        <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/148280996/7da6b700-6528-400e-b8e4-017ad902f56c.jpg" alt="공지사항 이미지">
+        <img src="https://raw.githubusercontent.com/donheekang/planner/main/assets/148280996/7da6b700-6528-400e-b8e4-017ad902f56c" alt="공지사항 이미지">
     </section>
 
-    <!-- 나머지 부분은 이전과 동일하므로 생략하였습니다. -->
+    <!-- 정보 제출 폼 -->
+    <section>
+        <h2>소개 정보 제출</h2>
+        <!-- Netlify 폼 설정 -->
+        <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
+            <div>
+                <label for="introducerName">소개하는 사람 이름:</label>
+                <input type="text" id="introducerName" name="introducerName">
+            </div>
+            <div>
+                <label for="introducerContact">소개하는 사람 연락처:</label>
+                <input type="text" id="introducerContact" name="introducerContact">
+            </div>
+            <div>
+                <label for="introduceeName">소개받는 사람 이름:</label>
+                <input type="text" id="introduceeName" name="introduceeName">
+            </div>
+            <div>
+                <label for="introduceeContact">소개받는 사람 연락처:</label>
+                <input type="text" id="introduceeContact" name="introduceeContact">
+            </div>
+            <button type="submit">제출하기</button>
+        </form>
+    </section>
 
+    <!-- 문의 섹션 -->
+    <section>
+        <h2>문의사항</h2>
+        <p>이메일: Impnjob@gmail.com</p>
+        <p>고객센터: 010.8499.5718</p>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
