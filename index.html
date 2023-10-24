@@ -25,29 +25,28 @@
         <p>2.소득구간 연 6,000만 이하</p>
         <p>(개인사업자의 경우 연매출 6,000만이하)</p>
         <p>기본 소개비 인당 50만</p>
-        <!-- 수정된 이미지 경로 -->
         <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/148280996/277554113-8a88e302-fa9b-4497-9bcb-408b92dcc8ef.jpg" alt="공지사항 이미지">
     </section>
 
     <!-- 정보 제출 폼 -->
     <section>
         <h2>소개 정보 제출</h2>
-        <form action="#" method="post" id="introForm">
+        <form action="/thank-you" method="post" id="introForm" data-netlify="true">
             <div>
                 <label for="introducerName">소개하는 사람 이름:</label>
-                <input type="text" id="introducerName" name="introducerName">
+                <input type="text" id="introducerName" name="introducerName" required>
             </div>
             <div>
                 <label for="introducerContact">소개하는 사람 연락처:</label>
-                <input type="text" id="introducerContact" name="introducerContact">
+                <input type="text" id="introducerContact" name="introducerContact" required>
             </div>
             <div>
                 <label for="introduceeName">소개받는 사람 이름:</label>
-                <input type="text" id="introduceeName" name="introduceeName">
+                <input type="text" id="introduceeName" name="introduceeName" required>
             </div>
             <div>
                 <label for="introduceeContact">소개받는 사람 연락처:</label>
-                <input type="text" id="introduceeContact" name="introduceeContact">
+                <input type="text" id="introduceeContact" name="introduceeContact" required>
             </div>
             <button type="submit">제출하기</button>
         </form>
